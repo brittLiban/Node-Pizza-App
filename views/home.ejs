@@ -23,7 +23,7 @@
             <a class="main-button" role="button" href="#">Contact Us</a>
         </header>
 
-        <form id="pizza-form" method="get" action="success.html">
+        <form id="pizza-form" method="post" action="success">
             
             <!-- Contact Information -->
             <fieldset>
@@ -35,7 +35,7 @@
                 <input type="text" id="lname" name="lname" placeholder="Enter last name">
 
                 <label for="email">Email address:</label>
-                <input type="email" id="email"  placeholder="Enter email">
+                <input type="email" id="email" name="email"  placeholder="Enter email">
             </fieldset>
 
             <!-- Pickup or Delivery -->
@@ -58,18 +58,18 @@
                 <label>
                     <input type='checkbox'  
                     value='pepperoni' 
-                    name='toppings[]'>Pepperoni
+                    name='toppings'>Pepperoni
                 </label>
                 <label class='form-check-label'>
                     <input type='checkbox' value='olives' 
-                    name='toppings[]'>Olives</label>
+                    name='toppings'>Olives</label>
                 <label class='form-check-label'>
                     <input type='checkbox' value='sausage' 
-                    name='toppings[]'>Sausage</label>
+                    name='toppings'>Sausage</label>
                 <label class='form-check-label'>
                     <input type='checkbox' 
                     value='artichokes' 
-                    name='toppings[]'>Artichokes</label>
+                    name='toppings'>Artichokes</label>
             </fieldset>
 
             <!-- Pizza Size Select List -->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="main">
+        <header>
+            <img src="images/pizza-guy.png" alt="Pizza Guy">
+            <h1>Poppa's Pizza</h1>
+            <h2>Serving GRC Students Since 2020</h2>
+            <hr>
+            <p>We make really good pizza</p>
+            <a class="main-button" role="button" href="#">Contact Us</a>
+        </header>
+        <h1>Thank you for your order, <%= details.fname %> <%= details.lname %> </h1>
+
+       
+    </div>
+
+    <div>
+        <h1>Order Confrimation for: <%= details.fname %> <%= details.lname %> </h1>
+        <p>Email: <%= details.email %> </p>
+        <p>Pick Up? :  <%= details.method %> </p>
+        <p>Size: <%= details.size %> </p>
+
+        <p>Toppings: <%= details.toppings %>       
+        </p>
+        
+        <p>Comment: <%= details.comment %> </p>
+        <p>Discount? : <%= details.discount %> </p>
+    </div>
+    
+
+
+</body>
+
+</html>
